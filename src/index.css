@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 body {
@@ -13,24 +14,43 @@ body {
   justify-content: center;
 }
 
-header p {
-  font-family: Hanken Grotesk;
-font-size: 14px;
-font-weight: 500;
-line-height: 18.24px;
-text-align: center;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color : #8E8E8E; 
-}
-
-h1 {
-  font-family: Hanken Grotesk;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26.06px;
+header {
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
+header > h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #F9F4DA;
+}
+
+header > p {
+  font-size: 0.875rem;
+  max-width: 350px;
+  color: #8E8E8E;
+}
+section {
+  width: 352px;
+  padding: 15px 0px 15px 0px; 
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px; 
+  background-color: #10A95B; 
+  text-align: center;
+}
+section > p {
+  margin: 0 0 .5em 0
+}
+
+.chips {
+  padding: 4.5px;
+  border-radius: 4px; 
+}
+section.container-chips {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  gap: 3px; 
+  flex-wrap: wrap;
+  background-color: inherit;
+}
